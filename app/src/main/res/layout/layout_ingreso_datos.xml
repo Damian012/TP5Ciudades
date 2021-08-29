@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="5dp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscador de temperatura"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textBuscaT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa nombre de ciudad:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/nombreCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buscarCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        />
+
+</LinearLayout>
