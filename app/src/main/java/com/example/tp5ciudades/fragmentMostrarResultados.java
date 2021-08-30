@@ -1,9 +1,11 @@
 package com.example.tp5ciudades;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import android.app.Fragment;
@@ -36,27 +38,27 @@ public class fragmentMostrarResultados extends Fragment {
 
         String NombreAmostrar;
         NombreAmostrar=miActivityAnfitriona.obtenerNombreIngresado();
-        txtMostrarNombreCiudad.setText("Nombre de la ciudad:"+NombreAmostrar);
+        txtMostrarNombreCiudad.setText(NombreAmostrar);
 
         String estadoClimaAmostrar;
         estadoClimaAmostrar=miActivityAnfitriona.obtenerEstadodeClima();
-        txtClimaActual.setText("Estado de clima actual:"+estadoClimaAmostrar);
+        txtClimaActual.setText(estadoClimaAmostrar);
 
         String temperaturaAmostrar;
         temperaturaAmostrar=miActivityAnfitriona.obtenerTemperatura();
-        txtTemperatura.setText("Temperatura actual:"+temperaturaAmostrar);
+        txtTemperatura.setText(temperaturaAmostrar+"°C");
 
         String sensacionTermicaAmostrar;
         sensacionTermicaAmostrar=miActivityAnfitriona.obtenerSensacionTermica();
-        txtSensacionTermica.setText("Sensacion termica actual:"+sensacionTermicaAmostrar);
+        txtSensacionTermica.setText(sensacionTermicaAmostrar+"°C");
 
         String humedadAmostrar;
         humedadAmostrar=miActivityAnfitriona.obtenerHumedad();
-        txtHumedad.setText("Humedad actual:"+humedadAmostrar);
+        txtHumedad.setText(humedadAmostrar+"%");
 
         String velocidadVientoAmostrar;
         velocidadVientoAmostrar=miActivityAnfitriona.obtenerVelocidadViento();
-        txtVelocidadViento.setText("Velocidad del viento:"+velocidadVientoAmostrar);
+        txtVelocidadViento.setText(velocidadVientoAmostrar+" Km/h");
 
 
         return vistaADevolver;
