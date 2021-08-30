@@ -55,10 +55,6 @@ public class fragmentIngresoDatos extends Fragment implements View.OnClickListen
 
         //nombreCiudadIngresado=nombreCiudadIngresada.getText().toString();
 
-        MainActivity miActivityAnfitriona;
-        miActivityAnfitriona=(MainActivity)getActivity();
-
-        miActivityAnfitriona.RecibirDatosIngresados(nomCity, estadoDeClimaActual, temperaturaCiudad, sensaciontermicaCiudad, humedadCiudad, velocidadViento);
     }
 
     private class tareaAsincronica extends AsyncTask<Void, Void, Void> {
@@ -92,6 +88,10 @@ public class fragmentIngresoDatos extends Fragment implements View.OnClickListen
         @Override
         protected void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
+            MainActivity miActivityAnfitriona;
+            miActivityAnfitriona=(MainActivity)getActivity();
+            miActivityAnfitriona.RecibirDatosIngresados(nomCity, estadoDeClimaActual, temperaturaCiudad, sensaciontermicaCiudad, humedadCiudad, velocidadViento);
+
             //milista.setAdapter(adaptador);
         }
     }
